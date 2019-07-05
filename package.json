@@ -1,0 +1,38 @@
+{
+  "name": "fetching",
+  "version": "1.0.0",
+  "description": "This is independent investors theme it is created through fetching.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.dev.js --open --hot",
+    "prod": "webpack --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurangzaib97/Independent_Investor_theme_By_Fetching_Method.git"
+  },
+  "author": "Aurangzaib Manzoor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aurangzaib97/Independent_Investor_theme_By_Fetching_Method/issues"
+  },
+  "homepage": "https://github.com/aurangzaib97/Independent_Investor_theme_By_Fetching_Method#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass": "^1.22.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.11.5"
+  }
+}
