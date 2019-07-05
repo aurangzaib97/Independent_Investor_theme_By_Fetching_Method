@@ -65,6 +65,21 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(8);
+} else {
+  module.exports = __webpack_require__(9);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -252,21 +267,6 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(8);
-} else {
-  module.exports = __webpack_require__(9);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 2 */
@@ -473,7 +473,7 @@ checkPropTypes.resetWarningCache = function() {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 4 */
@@ -488,7 +488,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(14);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 5 */
@@ -522,7 +522,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(7);
-module.exports = __webpack_require__(22);
+module.exports = __webpack_require__(40);
 
 
 /***/ }),
@@ -532,7 +532,7 @@ module.exports = __webpack_require__(22);
 "use strict";
 
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -2487,7 +2487,7 @@ module.exports = react;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 10 */
@@ -2552,7 +2552,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(15);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 12 */
@@ -2571,7 +2571,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),n=__webpack_require__(2),r=__webpack_require__(4);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(0),n=__webpack_require__(2),r=__webpack_require__(4);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function x(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ba(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:x("227");function ca(a,b,c,d,e,f,g,h,l){var k=Array.prototype.slice.call(arguments,3);try{b.apply(c,k)}catch(m){this.onError(m)}}
 var da=!1,ea=null,fa=!1,ha=null,ia={onError:function(a){da=!0;ea=a}};function ja(a,b,c,d,e,f,g,h,l){da=!1;ea=null;ca.apply(ia,arguments)}function ka(a,b,c,d,e,f,g,h,l){ja.apply(this,arguments);if(da){if(da){var k=ea;da=!1;ea=null}else x("198"),k=void 0;fa||(fa=!0,ha=k)}}var la=null,ma={};
 function na(){if(la)for(var a in ma){var b=ma[a],c=la.indexOf(a);-1<c?void 0:x("96",a);if(!oa[c]){b.extractEvents?void 0:x("97",a);oa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;pa.hasOwnProperty(h)?x("99",h):void 0;pa[h]=f;var l=f.phasedRegistrationNames;if(l){for(e in l)l.hasOwnProperty(e)&&qa(l[e],g,h);e=!0}else f.registrationName?(qa(f.registrationName,g,h),e=!0):e=!1;e?void 0:x("98",d,a)}}}}
@@ -3564,7 +3564,7 @@ exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(5)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(5)))
 
 /***/ }),
 /* 15 */
@@ -3588,7 +3588,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(1);
+var React = __webpack_require__(0);
 var _assign = __webpack_require__(2);
 var checkPropTypes = __webpack_require__(3);
 var scheduler = __webpack_require__(4);
@@ -24850,7 +24850,7 @@ module.exports = reactDom;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 16 */
@@ -24865,7 +24865,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(18);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 17 */
@@ -25313,7 +25313,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 19 */
@@ -25328,7 +25328,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -25336,43 +25336,43 @@ var _nav = __webpack_require__(20);
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _secondSection = __webpack_require__(24);
+var _secondSection = __webpack_require__(21);
 
 var _secondSection2 = _interopRequireDefault(_secondSection);
 
-var _about = __webpack_require__(30);
+var _about = __webpack_require__(27);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _offer = __webpack_require__(33);
+var _offer = __webpack_require__(30);
 
 var _offer2 = _interopRequireDefault(_offer);
 
-var _achievements = __webpack_require__(34);
+var _achievements = __webpack_require__(31);
 
 var _achievements2 = _interopRequireDefault(_achievements);
 
-var _interest = __webpack_require__(35);
+var _interest = __webpack_require__(32);
 
 var _interest2 = _interopRequireDefault(_interest);
 
-var _happyClients = __webpack_require__(38);
+var _happyClients = __webpack_require__(35);
 
 var _happyClients2 = _interopRequireDefault(_happyClients);
 
-var _guidance = __webpack_require__(39);
+var _guidance = __webpack_require__(36);
 
 var _guidance2 = _interopRequireDefault(_guidance);
 
-var _map = __webpack_require__(40);
+var _map = __webpack_require__(37);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _footer = __webpack_require__(41);
+var _footer = __webpack_require__(38);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _data = __webpack_require__(21);
+var _data = __webpack_require__(39);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25439,7 +25439,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -25469,7 +25469,7 @@ var Nav = function (_Component) {
                     { className: "container", key: ind },
                     _react2.default.createElement(
                         "nav",
-                        { className: "navbar navbar-expand-lg bg-white", style: { overflowY: "hidden" } },
+                        { className: "navbar navbar-expand-lg bg-white", style: { overflowY: "hidden" }, id: "header" },
                         _react2.default.createElement(
                             "a",
                             { className: "navbar-brand", href: "#" },
@@ -25562,6 +25562,1479 @@ exports.default = Nav;
 
 /***/ }),
 /* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _image = __webpack_require__(22);
+
+var _image2 = _interopRequireDefault(_image);
+
+var _responsiveForm = __webpack_require__(26);
+
+var _responsiveForm2 = _interopRequireDefault(_responsiveForm);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var second_section = function second_section(props) {
+    return _react2.default.createElement(
+        'section',
+        null,
+        _react2.default.createElement(_image2.default, { img: props.sec }),
+        _react2.default.createElement(_responsiveForm2.default, { res: props.sec })
+    );
+};
+
+exports.default = second_section;
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _content = __webpack_require__(23);
+
+var _content2 = _interopRequireDefault(_content);
+
+var _circle = __webpack_require__(24);
+
+var _circle2 = _interopRequireDefault(_circle);
+
+var _form = __webpack_require__(25);
+
+var _form2 = _interopRequireDefault(_form);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var image = function image(props) {
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'div',
+            { className: 'background-img' },
+            _react2.default.createElement(_content2.default, { con: props.img }),
+            _react2.default.createElement(_circle2.default, null),
+            _react2.default.createElement(_form2.default, { form: props.img })
+        )
+    );
+};
+
+exports.default = image;
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var content = function content(props) {
+    var response = props.con[0] ? props.con[0] : [];
+    response = response.header[0].map(function (headObj, i) {
+        return _react2.default.createElement(
+            "div",
+            { key: i },
+            _react2.default.createElement(
+                "h6",
+                null,
+                headObj.header_title
+            ),
+            _react2.default.createElement(
+                "h1",
+                null,
+                headObj.yearly_per,
+                " ",
+                _react2.default.createElement(
+                    "span",
+                    null,
+                    headObj.span
+                ),
+                " ",
+                headObj.return
+            ),
+            _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    _react2.default.createElement("img", { src: "./img/tick-b.png", alt: "tick img" }),
+                    _react2.default.createElement(
+                        "span",
+                        null,
+                        headObj.per_value[0].type
+                    ),
+                    " ",
+                    headObj.per_value[0].investment
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    _react2.default.createElement("img", { src: "./img/tick-b.png", alt: "tick img" }),
+                    _react2.default.createElement(
+                        "span",
+                        null,
+                        headObj.per_value[1].type
+                    ),
+                    " ",
+                    headObj.per_value[1].investment
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    _react2.default.createElement("img", { src: "./img/tick-b.png", alt: "tick img" }),
+                    _react2.default.createElement(
+                        "span",
+                        null,
+                        headObj.per_value[2].type
+                    ),
+                    " ",
+                    headObj.per_value[2].investment
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    _react2.default.createElement("img", { src: "./img/tick-b.png", alt: "tick img" }),
+                    _react2.default.createElement(
+                        "span",
+                        null,
+                        headObj.per_value[3].type
+                    ),
+                    " ",
+                    headObj.per_value[3].investment
+                )
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "div",
+        { className: "content" },
+        response
+    );
+};
+
+exports.default = content;
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var circle = function circle() {
+    return _react2.default.createElement(
+        "div",
+        { className: "package" },
+        _react2.default.createElement("img", { src: "./img/offer.png", height: "100%", width: "100%", alt: "offer image" }),
+        _react2.default.createElement("img", { className: "arrow", src: "./img/arrow.png", alt: "" })
+    );
+};
+
+exports.default = circle;
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var form = function form(props) {
+    var response = props.form[0] ? props.form[0] : [];
+    response = response.header[1].map(function (val, ind) {
+        return _react2.default.createElement(
+            "div",
+            { className: "form form-media", key: ind },
+            _react2.default.createElement(
+                "h5",
+                { className: "text-center w-75 ml-5" },
+                val.title
+            ),
+            _react2.default.createElement(
+                "p",
+                { className: "text-center" },
+                val.description
+            ),
+            _react2.default.createElement(
+                "form",
+                { action: "#" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "d-flex" },
+                    _react2.default.createElement("input", { type: "text", name: "FName", className: "form-control input-color mr-3 ml-4", placeholder: val.form_name }),
+                    _react2.default.createElement("input", { type: "tel", name: "FName", className: "form-control input-color mr-4", placeholder: val.form_phone })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement("input", { type: "email", name: "EMail", className: "form-control input-color input-width ml-4 mt-3 ", placeholder: val.form_emailAdree })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(
+                        "select",
+                        { className: "form-control input-color mt-3 ml-4 input-width", name: "Investment Option" },
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_question
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_question_options[0].option
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_question_options[1].option
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_question_options[2].option
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_question_options[3].option
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(
+                        "select",
+                        { name: "Investment Sum", className: "form-control input-width input-color ml-4 mt-3", style: { width: "88%" } },
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_sum
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_sum_options[0].option
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_sum_options[1].option
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            val.form_sum_options[2].option
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "w-100 d-flex justify-content-center align-items-center", style: { height: "100px" } },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "btn input-width btn-info " },
+                        val.form_btn
+                    )
+                )
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "div",
+        null,
+        response
+    );
+};
+
+exports.default = form;
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var responsiveForm = function responsiveForm(props) {
+    var response = props.res[0] ? props.res[0] : [];
+    response = response.header[1].map(function (val, ind) {
+        return _react2.default.createElement(
+            "div",
+            { key: ind },
+            _react2.default.createElement(
+                "div",
+                { className: "form d-md-none form-res" },
+                _react2.default.createElement(
+                    "h5",
+                    { className: "text-center" },
+                    val.title
+                ),
+                _react2.default.createElement(
+                    "p",
+                    { className: "text-center" },
+                    val.description
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { style: { marginLeft: "7%" } },
+                    _react2.default.createElement(
+                        "form",
+                        { action: "#", className: "formGroup" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "fullName", style: { display: "flex", justifyContent: "space-around" } },
+                            _react2.default.createElement("input", { type: "text", name: "FName", className: "input-color name d-inline", placeholder: val.form_name }),
+                            _react2.default.createElement("input", { type: "tel", name: "FName", className: "input-color phone d-inline", placeholder: val.form_phone })
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            null,
+                            _react2.default.createElement("input", { type: "email", name: "EMail", className: "form-control input-color mt-3 input-width2", placeholder: val.form_emailAdree })
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            null,
+                            _react2.default.createElement(
+                                "select",
+                                { className: "form-control input-color mt-3 input-width2", name: "Investment Option", style: { width: "94%" } },
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_question
+                                ),
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_question_options[0].option
+                                ),
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_question_options[1].option
+                                ),
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_question_options[2].option
+                                ),
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_question_options[3].option
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            null,
+                            _react2.default.createElement(
+                                "select",
+                                { name: "Investment Sum", className: "form-control input-color mt-3 input-width2", style: { width: "94%" } },
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_sum
+                                ),
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_sum_options[0].option
+                                ),
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_sum_options[1].option
+                                ),
+                                _react2.default.createElement(
+                                    "option",
+                                    null,
+                                    val.form_sum_options[2].option
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "d-flex align-items-center", style: { height: "100px" } },
+                            _react2.default.createElement(
+                                "button",
+                                { className: "btn input-width2 btn-info " },
+                                val.form_btn
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "div",
+        null,
+        response
+    );
+};
+
+exports.default = responsiveForm;
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _services = __webpack_require__(28);
+
+var _services2 = _interopRequireDefault(_services);
+
+var _aboutOurCompany = __webpack_require__(29);
+
+var _aboutOurCompany2 = _interopRequireDefault(_aboutOurCompany);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var about = function about(props) {
+    return _react2.default.createElement(
+        'section',
+        null,
+        _react2.default.createElement(
+            'div',
+            { className: 'about' },
+            _react2.default.createElement(_services2.default, { ser: props.about }),
+            _react2.default.createElement(_aboutOurCompany2.default, { com: props.about })
+        )
+    );
+};
+
+exports.default = about;
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var services = function services(props) {
+    var response = props.ser.map(function (val, ind) {
+        return _react2.default.createElement(
+            "div",
+            { className: "services", key: ind },
+            _react2.default.createElement(
+                "div",
+                { className: "service-info" },
+                _react2.default.createElement(
+                    "span",
+                    { className: "heading" },
+                    val.investments_per[0].percentage
+                ),
+                _react2.default.createElement(
+                    "p",
+                    { className: "ser-des ser-des2" },
+                    val.investments_per[0].description
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "service-info" },
+                _react2.default.createElement(
+                    "span",
+                    { className: "heading" },
+                    val.investments_per[1].percentage
+                ),
+                _react2.default.createElement(
+                    "p",
+                    { className: "ser-des ser-des2" },
+                    val.investments_per[1].description
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "service-info" },
+                _react2.default.createElement(
+                    "span",
+                    { className: "heading" },
+                    val.investments_per[2].percentage
+                ),
+                _react2.default.createElement(
+                    "p",
+                    { className: "ser-des" },
+                    val.investments_per[2].description
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "service-info" },
+                _react2.default.createElement(
+                    "span",
+                    { className: "heading" },
+                    val.investments_per[3].percentage
+                ),
+                _react2.default.createElement(
+                    "p",
+                    { className: "ser-des" },
+                    val.investments_per[3].description
+                )
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "div",
+        null,
+        response
+    );
+};
+
+exports.default = services;
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var aboutOurCompany = function aboutOurCompany(props) {
+    var response = props.com[0] ? props.com[0] : [];
+    response = response.about_company.map(function (val, ind) {
+        return _react2.default.createElement(
+            "div",
+            { className: "aboutOurCompany", key: ind },
+            _react2.default.createElement(
+                "div",
+                { className: "aboutInfo aboutInfoMedia" },
+                _react2.default.createElement(
+                    "div",
+                    { style: { marginLeft: "100px" }, className: "about-content" },
+                    _react2.default.createElement(
+                        "h1",
+                        null,
+                        val.title
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        { style: { marginTop: "20px", lineHeight: "30px" } },
+                        val.description
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        { style: { marginTop: "20px", lineHeight: "30px" } },
+                        val.description_part
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "aboutInfo aboutImgMedia" },
+                _react2.default.createElement("img", { src: val.about_img, height: "86%", width: "100%", alt: "image" })
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "div",
+        null,
+        response
+    );
+};
+
+exports.default = aboutOurCompany;
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var offer = function offer(props) {
+    var response = props.offer[0] ? props.offer[0] : [];
+    response = response.offer.map(function (val, ind) {
+        return _react2.default.createElement(
+            "div",
+            { className: "offers", key: ind },
+            _react2.default.createElement(
+                "div",
+                { className: "heading" },
+                _react2.default.createElement(
+                    "h3",
+                    null,
+                    val.title
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "offer" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "offer-info" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "desc" },
+                        _react2.default.createElement(
+                            "h5",
+                            null,
+                            val.offer_detail1[0].title
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            val.offer_detail1[0].description
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "desc" },
+                        _react2.default.createElement(
+                            "h5",
+                            null,
+                            val.offer_detail1[1].title
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            val.offer_detail1[1].description
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "desc" },
+                        _react2.default.createElement(
+                            "h5",
+                            null,
+                            val.offer_detail1[2].title
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            val.offer_detail1[2].description
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "offer-info offer-info-2" },
+                    _react2.default.createElement("img", { src: val.offer_img, height: "60%", alt: "" })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "offer-info offer-info-3" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "desc desc_3" },
+                        _react2.default.createElement(
+                            "h5",
+                            null,
+                            val.offer_detail2[0].title
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            val.offer_detail2[0].description
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "desc desc_3" },
+                        _react2.default.createElement(
+                            "h5",
+                            null,
+                            val.offer_detail2[1].title
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            val.offer_detail2[1].description
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "desc desc_3" },
+                        _react2.default.createElement(
+                            "h5",
+                            null,
+                            val.offer_detail2[2].title
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            val.offer_detail2[2].description
+                        )
+                    )
+                )
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "section",
+        null,
+        response
+    );
+};
+
+exports.default = offer;
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Achievements = function Achievements(props) {
+    var response = props.ach[0] ? props.ach[0] : [];
+    response = response.capital_protection.map(function (val, ind) {
+        return _react2.default.createElement(
+            "div",
+            { className: "achievements", key: ind },
+            _react2.default.createElement(
+                "div",
+                { className: "container-fluid" },
+                _react2.default.createElement(
+                    "h5",
+                    { className: "text-center pt-5 pb-5 ach_Head" },
+                    _react2.default.createElement(
+                        "span",
+                        { className: "font-weight-normal ach_Head" },
+                        val.title_1
+                    ),
+                    " ",
+                    val.title_2
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "achievementInfos" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "achievementInfo" },
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        val.description1
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        val.description2
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        val.description3
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "achievementInfo" },
+                    _react2.default.createElement("img", { src: val.capital_protection_img, height: "85%", alt: "image" })
+                )
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "section",
+        null,
+        response
+    );
+};
+
+exports.default = Achievements;
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _interestContent = __webpack_require__(33);
+
+var _interestContent2 = _interopRequireDefault(_interestContent);
+
+var _interestForm = __webpack_require__(34);
+
+var _interestForm2 = _interopRequireDefault(_interestForm);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var interest = function interest(props) {
+    return _react2.default.createElement(
+        'section',
+        null,
+        _react2.default.createElement(
+            'div',
+            { className: 'container container2' },
+            _react2.default.createElement(
+                'div',
+                { className: 'row interest' },
+                _react2.default.createElement(_interestContent2.default, { content: props.int }),
+                _react2.default.createElement(_interestForm2.default, { intform: props.int })
+            )
+        )
+    );
+};
+
+exports.default = interest;
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var interestContent = function interestContent(props) {
+    return _react2.default.createElement(
+        "div",
+        { className: "col-md-6 col-xs-12 inter" },
+        _react2.default.createElement(
+            "h2",
+            { id: "head" },
+            props.content[0].Compound_Interest_Calculator[0].title
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            props.content[0].Compound_Interest_Calculator[0].description1
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            props.content[0].Compound_Interest_Calculator[0].description2
+        )
+    );
+};
+
+exports.default = interestContent;
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var interestForm = function interestForm(props) {
+    return _react2.default.createElement(
+        "div",
+        { className: "col-md-6 inter col-xs-12" },
+        _react2.default.createElement(
+            "div",
+            { className: "form" },
+            _react2.default.createElement(
+                "form",
+                { action: "#" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "form-group d-inline ml-3" },
+                    _react2.default.createElement(
+                        "label",
+                        { className: "mt-2", htmlFor: "no1" },
+                        props.intform[0].Compound_Interest_Calculator[1].form_input_title
+                    ),
+                    _react2.default.createElement("input", { type: "number", id: "no1", className: "form-control ml-3", style: { width: "90%" } })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "form-group d-inline ml-3" },
+                    _react2.default.createElement(
+                        "label",
+                        { htmlFor: "no2", className: "mt-2" },
+                        props.intform[0].Compound_Interest_Calculator[2].form_input_title
+                    ),
+                    _react2.default.createElement("input", { type: "number", id: "no2", className: "form-control ml-3", style: { width: "90%" } })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "form-group d-inline ml-3" },
+                    _react2.default.createElement(
+                        "label",
+                        { htmlFor: "mon", className: "mt-2" },
+                        props.intform[0].Compound_Interest_Calculator[3].form_input_title
+                    ),
+                    _react2.default.createElement(
+                        "select",
+                        { id: "mon", className: "form-control ml-3", style: { width: "90%" } },
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            props.intform[0].Compound_Interest_Calculator[4].form_input_options[0].option_detail
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            props.intform[0].Compound_Interest_Calculator[4].form_input_options[1].option_detail
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            props.intform[0].Compound_Interest_Calculator[4].form_input_options[2].option_detail
+                        ),
+                        _react2.default.createElement(
+                            "option",
+                            null,
+                            props.intform[0].Compound_Interest_Calculator[4].form_input_options[3].option_detail
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "form-group d-inline ml-3" },
+                    _react2.default.createElement(
+                        "label",
+                        { htmlFor: "no3", className: "mt-2" },
+                        props.intform[0].Compound_Interest_Calculator[5].form_input_title
+                    ),
+                    _react2.default.createElement("input", { type: "number", id: "no3", className: "form-control ml-3", style: { width: "90%" } })
+                ),
+                _react2.default.createElement(
+                    "button",
+                    { type: "submit", className: "btn btn-outline-dark ml-3 mt-2" },
+                    props.intform[0].Compound_Interest_Calculator[6].form_btn
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "bottom text-light d-flex flex-column" },
+                _react2.default.createElement(
+                    "h6",
+                    null,
+                    props.intform[0].Compound_Interest_Calculator[6].Interest_Amount
+                ),
+                _react2.default.createElement(
+                    "h1",
+                    null,
+                    props.intform[0].Compound_Interest_Calculator[6].percentage
+                )
+            )
+        )
+    );
+};
+
+exports.default = interestForm;
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var happyClients = function happyClients(props) {
+    var response = props.hc[0] ? props.hc[0] : [];
+    response = response.Happy_Clients.map(function (val, ind) {
+        return _react2.default.createElement(
+            "div",
+            { className: "happyClients", key: ind },
+            _react2.default.createElement(
+                "div",
+                { className: "d-flex flex-column justify-content-around align-items-center", style: { height: "130px" } },
+                _react2.default.createElement(
+                    "h1",
+                    { className: "text-center mt-3 head_hc" },
+                    val.title
+                ),
+                _react2.default.createElement(
+                    "p",
+                    { className: "text-center para_hc" },
+                    val.description
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "clients" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "client" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "client-img" },
+                        _react2.default.createElement("img", { src: val.client_data[0].client_img, alt: "" })
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        { className: "para_c" },
+                        val.client_data[0].client_description
+                    ),
+                    _react2.default.createElement(
+                        "h6",
+                        { className: "client_name" },
+                        val.client_data[0].client_name
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "client client-2" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "client-img" },
+                        _react2.default.createElement("img", { src: val.client_data[1].client_img, alt: "" })
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        { className: "para_c" },
+                        val.client_data[1].client_description
+                    ),
+                    _react2.default.createElement(
+                        "h6",
+                        { className: "client_name" },
+                        val.client_data[1].client_name
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "client" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "client-img" },
+                        _react2.default.createElement("img", { src: val.client_data[2].client_img, alt: "" })
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        { className: "para_c" },
+                        val.client_data[2].client_description
+                    ),
+                    _react2.default.createElement(
+                        "h6",
+                        { className: "client_name" },
+                        val.client_data[2].client_name
+                    )
+                )
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "section",
+        null,
+        response
+    );
+};
+
+exports.default = happyClients;
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var guidance = function guidance(props) {
+    var response = props.guide[0] ? props.guide[0] : [];
+    response = response.contact_detail.map(function (val, ind) {
+        return _react2.default.createElement(
+            "div",
+            { className: "guidance", key: ind },
+            _react2.default.createElement(
+                "div",
+                { className: "form" },
+                _react2.default.createElement(
+                    "form",
+                    { action: "#" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "form-group" },
+                        _react2.default.createElement("input", { type: "text", className: "form-control guide-form", placeholder: val.form_name })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "form-group" },
+                        _react2.default.createElement("input", { type: "tel", className: "form-control guide-form", placeholder: val.form_phone })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "form-group" },
+                        _react2.default.createElement("input", { type: "email", className: "form-control guide-form", placeholder: val.form_emailAdree })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "form-group" },
+                        _react2.default.createElement(
+                            "select",
+                            { className: "form-control guide-form", name: "Investment Option" },
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_question
+                            ),
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_question_options[0].option
+                            ),
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_question_options[1].option
+                            ),
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_question_options[2].option
+                            ),
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_question_options[3].option
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "form-group" },
+                        _react2.default.createElement(
+                            "select",
+                            { name: "Investment Sum", className: "form-control guide-form" },
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_sum
+                            ),
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_sum_options[0].option
+                            ),
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_sum_options[1].option
+                            ),
+                            _react2.default.createElement(
+                                "option",
+                                null,
+                                val.form_sum_options[2].option
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "d-flex justify-content-center align-items-center mt-0", style: { height: "100px" } },
+                        _react2.default.createElement(
+                            "button",
+                            { className: "btn btn-width btn-info " },
+                            val.form_btn
+                        )
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "guide" },
+                _react2.default.createElement(
+                    "h5",
+                    null,
+                    val.reach_out
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(
+                        "h5",
+                        null,
+                        val.phone_description
+                    ),
+                    _react2.default.createElement(
+                        "h5",
+                        { className: "phone" },
+                        val.phone_no
+                    ),
+                    _react2.default.createElement(
+                        "h5",
+                        null,
+                        val.GET_QUICKLY
+                    )
+                )
+            )
+        );
+    });
+    return _react2.default.createElement(
+        "section",
+        null,
+        response
+    );
+};
+
+exports.default = guidance;
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var map = function map() {
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+            "div",
+            { className: "map" },
+            _react2.default.createElement("iframe", { src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8459309398263!2d-0.12924748479932216!3d51.5160425178931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b32c31ab565%3A0xc61be3842a615dfb!2s1+St+Giles+High+St%2C+London+WC2H+8AG%2C+UK!5e0!3m2!1sen!2s!4v1562227833787!5m2!1sen!2s", width: "100%", height: "300" })
+        )
+    );
+};
+
+exports.default = map;
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var footer = function footer(props) {
+    return _react2.default.createElement(
+        "footer",
+        null,
+        _react2.default.createElement(
+            "div",
+            { className: "footer-top" },
+            _react2.default.createElement(
+                "div",
+                { className: "left" },
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(
+                        "h5",
+                        { className: "font-weight-bold text-light" },
+                        props.footer[0].footer_detail[0].contact_title
+                    ),
+                    _react2.default.createElement(
+                        "pre",
+                        { className: "text-light" },
+                        props.footer[0].footer_detail[0].Address_part_1,
+                        " ",
+                        _react2.default.createElement("br", null),
+                        props.footer[0].footer_detail[0].Address_part_2,
+                        " ",
+                        _react2.default.createElement("br", null),
+                        props.footer[0].footer_detail[0].Address_part_3
+                    ),
+                    _react2.default.createElement(
+                        "h6",
+                        { className: "font-weight-bold text-light" },
+                        props.footer[0].footer_detail[0].phone_no
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "right" },
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(
+                        "h5",
+                        { className: "text-light" },
+                        props.footer[0].footer_detail[1].contac_about_title
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        { className: "text-light" },
+                        props.footer[0].footer_detail[1].description
+                    )
+                )
+            )
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "footer-bottom" },
+            _react2.default.createElement(
+                "p",
+                { className: "mt-3 text-light" },
+                props.footer[0].footer_detail[2].copyright
+            )
+        )
+    );
+};
+
+exports.default = footer;
+
+/***/ }),
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25847,1485 +27320,10 @@ const data = [
 
 
 /***/ }),
-/* 22 */
+/* 40 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 23 */,
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _image = __webpack_require__(25);
-
-var _image2 = _interopRequireDefault(_image);
-
-var _responsiveForm = __webpack_require__(29);
-
-var _responsiveForm2 = _interopRequireDefault(_responsiveForm);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var second_section = function second_section(props) {
-    return _react2.default.createElement(
-        'section',
-        null,
-        _react2.default.createElement(_image2.default, { img: props.sec }),
-        _react2.default.createElement(_responsiveForm2.default, { res: props.sec })
-    );
-};
-
-exports.default = second_section;
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _content = __webpack_require__(26);
-
-var _content2 = _interopRequireDefault(_content);
-
-var _circle = __webpack_require__(27);
-
-var _circle2 = _interopRequireDefault(_circle);
-
-var _form = __webpack_require__(28);
-
-var _form2 = _interopRequireDefault(_form);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var image = function image(props) {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            'div',
-            { className: 'background-img' },
-            _react2.default.createElement(_content2.default, { con: props.img }),
-            _react2.default.createElement(_circle2.default, null),
-            _react2.default.createElement(_form2.default, { form: props.img })
-        )
-    );
-};
-
-exports.default = image;
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var content = function content(props) {
-    var response = props.con[0] ? props.con[0] : [];
-    response = response.header[0].map(function (headObj, i) {
-        return _react2.default.createElement(
-            "div",
-            { key: i },
-            _react2.default.createElement(
-                "h6",
-                null,
-                headObj.header_title
-            ),
-            _react2.default.createElement(
-                "h1",
-                null,
-                headObj.yearly_per,
-                " ",
-                _react2.default.createElement(
-                    "span",
-                    null,
-                    headObj.span
-                ),
-                " ",
-                headObj.return
-            ),
-            _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    _react2.default.createElement("img", { src: "./img/tick-b.png", alt: "tick img" }),
-                    _react2.default.createElement(
-                        "span",
-                        null,
-                        headObj.per_value[0].type
-                    ),
-                    " ",
-                    headObj.per_value[0].investment
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    _react2.default.createElement("img", { src: "./img/tick-b.png", alt: "tick img" }),
-                    _react2.default.createElement(
-                        "span",
-                        null,
-                        headObj.per_value[1].type
-                    ),
-                    " ",
-                    headObj.per_value[1].investment
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    _react2.default.createElement("img", { src: "./img/tick-b.png", alt: "tick img" }),
-                    _react2.default.createElement(
-                        "span",
-                        null,
-                        headObj.per_value[2].type
-                    ),
-                    " ",
-                    headObj.per_value[2].investment
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    _react2.default.createElement("img", { src: "./img/tick-b.png", alt: "tick img" }),
-                    _react2.default.createElement(
-                        "span",
-                        null,
-                        headObj.per_value[3].type
-                    ),
-                    " ",
-                    headObj.per_value[3].investment
-                )
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "div",
-        { className: "content" },
-        response
-    );
-};
-
-exports.default = content;
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var circle = function circle() {
-    return _react2.default.createElement(
-        "div",
-        { className: "package" },
-        _react2.default.createElement("img", { src: "./img/offer.png", height: "100%", width: "100%", alt: "offer image" }),
-        _react2.default.createElement("img", { className: "arrow", src: "./img/arrow.png", alt: "" })
-    );
-};
-
-exports.default = circle;
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var form = function form(props) {
-    var response = props.form[0] ? props.form[0] : [];
-    response = response.header[1].map(function (val, ind) {
-        return _react2.default.createElement(
-            "div",
-            { className: "form form-media", key: ind },
-            _react2.default.createElement(
-                "h5",
-                { className: "text-center w-75 ml-5" },
-                val.title
-            ),
-            _react2.default.createElement(
-                "p",
-                { className: "text-center" },
-                val.description
-            ),
-            _react2.default.createElement(
-                "form",
-                { action: "#" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "d-flex" },
-                    _react2.default.createElement("input", { type: "text", name: "FName", className: "form-control input-color mr-3 ml-4", placeholder: val.form_name }),
-                    _react2.default.createElement("input", { type: "tel", name: "FName", className: "form-control input-color mr-4", placeholder: val.form_phone })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement("input", { type: "email", name: "EMail", className: "form-control input-color input-width ml-4 mt-3 ", placeholder: val.form_emailAdree })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(
-                        "select",
-                        { className: "form-control input-color mt-3 ml-4 input-width", name: "Investment Option" },
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_question
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_question_options[0].option
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_question_options[1].option
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_question_options[2].option
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_question_options[3].option
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(
-                        "select",
-                        { name: "Investment Sum", className: "form-control input-width input-color ml-4 mt-3", style: { width: "88%" } },
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_sum
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_sum_options[0].option
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_sum_options[1].option
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            val.form_sum_options[2].option
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "w-100 d-flex justify-content-center align-items-center", style: { height: "100px" } },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "btn input-width btn-info " },
-                        val.form_btn
-                    )
-                )
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "div",
-        null,
-        response
-    );
-};
-
-exports.default = form;
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var responsiveForm = function responsiveForm(props) {
-    var response = props.res[0] ? props.res[0] : [];
-    response = response.header[1].map(function (val, ind) {
-        return _react2.default.createElement(
-            "div",
-            { key: ind },
-            _react2.default.createElement(
-                "div",
-                { className: "form d-md-none form-res" },
-                _react2.default.createElement(
-                    "h5",
-                    { className: "text-center" },
-                    val.title
-                ),
-                _react2.default.createElement(
-                    "p",
-                    { className: "text-center" },
-                    val.description
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { style: { marginLeft: "7%" } },
-                    _react2.default.createElement(
-                        "form",
-                        { action: "#", className: "formGroup" },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "fullName", style: { display: "flex", justifyContent: "space-around" } },
-                            _react2.default.createElement("input", { type: "text", name: "FName", className: "input-color name d-inline", placeholder: val.form_name }),
-                            _react2.default.createElement("input", { type: "tel", name: "FName", className: "input-color phone d-inline", placeholder: val.form_phone })
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            null,
-                            _react2.default.createElement("input", { type: "email", name: "EMail", className: "form-control input-color mt-3 input-width2", placeholder: val.form_emailAdree })
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            null,
-                            _react2.default.createElement(
-                                "select",
-                                { className: "form-control input-color mt-3 input-width2", name: "Investment Option", style: { width: "94%" } },
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_question
-                                ),
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_question_options[0].option
-                                ),
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_question_options[1].option
-                                ),
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_question_options[2].option
-                                ),
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_question_options[3].option
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            null,
-                            _react2.default.createElement(
-                                "select",
-                                { name: "Investment Sum", className: "form-control input-color mt-3 input-width2", style: { width: "94%" } },
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_sum
-                                ),
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_sum_options[0].option
-                                ),
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_sum_options[1].option
-                                ),
-                                _react2.default.createElement(
-                                    "option",
-                                    null,
-                                    val.form_sum_options[2].option
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "d-flex align-items-center", style: { height: "100px" } },
-                            _react2.default.createElement(
-                                "button",
-                                { className: "btn input-width2 btn-info " },
-                                val.form_btn
-                            )
-                        )
-                    )
-                )
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "div",
-        null,
-        response
-    );
-};
-
-exports.default = responsiveForm;
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _services = __webpack_require__(31);
-
-var _services2 = _interopRequireDefault(_services);
-
-var _aboutOurCompany = __webpack_require__(32);
-
-var _aboutOurCompany2 = _interopRequireDefault(_aboutOurCompany);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var about = function about(props) {
-    return _react2.default.createElement(
-        'section',
-        null,
-        _react2.default.createElement(
-            'div',
-            { className: 'about' },
-            _react2.default.createElement(_services2.default, { ser: props.about }),
-            _react2.default.createElement(_aboutOurCompany2.default, { com: props.about })
-        )
-    );
-};
-
-exports.default = about;
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var services = function services(props) {
-    var response = props.ser.map(function (val, ind) {
-        return _react2.default.createElement(
-            "div",
-            { className: "services", key: ind },
-            _react2.default.createElement(
-                "div",
-                { className: "service-info" },
-                _react2.default.createElement(
-                    "span",
-                    { className: "heading" },
-                    val.investments_per[0].percentage
-                ),
-                _react2.default.createElement(
-                    "p",
-                    { className: "ser-des ser-des2" },
-                    val.investments_per[0].description
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "service-info" },
-                _react2.default.createElement(
-                    "span",
-                    { className: "heading" },
-                    val.investments_per[1].percentage
-                ),
-                _react2.default.createElement(
-                    "p",
-                    { className: "ser-des ser-des2" },
-                    val.investments_per[1].description
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "service-info" },
-                _react2.default.createElement(
-                    "span",
-                    { className: "heading" },
-                    val.investments_per[2].percentage
-                ),
-                _react2.default.createElement(
-                    "p",
-                    { className: "ser-des" },
-                    val.investments_per[2].description
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "service-info" },
-                _react2.default.createElement(
-                    "span",
-                    { className: "heading" },
-                    val.investments_per[3].percentage
-                ),
-                _react2.default.createElement(
-                    "p",
-                    { className: "ser-des" },
-                    val.investments_per[3].description
-                )
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "div",
-        null,
-        response
-    );
-};
-
-exports.default = services;
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var aboutOurCompany = function aboutOurCompany(props) {
-    var response = props.com[0] ? props.com[0] : [];
-    console.log(response);
-    response = response.about_company.map(function (val, ind) {
-        return _react2.default.createElement(
-            "div",
-            { className: "aboutOurCompany", key: ind },
-            _react2.default.createElement(
-                "div",
-                { className: "aboutInfo aboutInfoMedia" },
-                _react2.default.createElement(
-                    "div",
-                    { style: { marginLeft: "100px" }, className: "about-content" },
-                    _react2.default.createElement(
-                        "h1",
-                        null,
-                        val.title
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        { style: { marginTop: "20px", lineHeight: "30px" } },
-                        val.description
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        { style: { marginTop: "20px", lineHeight: "30px" } },
-                        val.description_part
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "aboutInfo aboutImgMedia" },
-                _react2.default.createElement("img", { src: val.about_img, height: "86%", width: "100%", alt: "image" })
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "div",
-        null,
-        response
-    );
-};
-
-exports.default = aboutOurCompany;
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var offer = function offer(props) {
-    var response = props.offer[0] ? props.offer[0] : [];
-    response = response.offer.map(function (val, ind) {
-        return _react2.default.createElement(
-            "div",
-            { className: "offers", key: ind },
-            _react2.default.createElement(
-                "div",
-                { className: "heading" },
-                _react2.default.createElement(
-                    "h3",
-                    null,
-                    val.title
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "offer" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "offer-info" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "desc" },
-                        _react2.default.createElement(
-                            "h5",
-                            null,
-                            val.offer_detail1[0].title
-                        ),
-                        _react2.default.createElement(
-                            "p",
-                            null,
-                            val.offer_detail1[0].description
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "desc" },
-                        _react2.default.createElement(
-                            "h5",
-                            null,
-                            val.offer_detail1[1].title
-                        ),
-                        _react2.default.createElement(
-                            "p",
-                            null,
-                            val.offer_detail1[1].description
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "desc" },
-                        _react2.default.createElement(
-                            "h5",
-                            null,
-                            val.offer_detail1[2].title
-                        ),
-                        _react2.default.createElement(
-                            "p",
-                            null,
-                            val.offer_detail1[2].description
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "offer-info offer-info-2" },
-                    _react2.default.createElement("img", { src: val.offer_img, height: "60%", alt: "" })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "offer-info offer-info-3" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "desc desc_3" },
-                        _react2.default.createElement(
-                            "h5",
-                            null,
-                            val.offer_detail2[0].title
-                        ),
-                        _react2.default.createElement(
-                            "p",
-                            null,
-                            val.offer_detail2[0].description
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "desc desc_3" },
-                        _react2.default.createElement(
-                            "h5",
-                            null,
-                            val.offer_detail2[1].title
-                        ),
-                        _react2.default.createElement(
-                            "p",
-                            null,
-                            val.offer_detail2[1].description
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "desc desc_3" },
-                        _react2.default.createElement(
-                            "h5",
-                            null,
-                            val.offer_detail2[2].title
-                        ),
-                        _react2.default.createElement(
-                            "p",
-                            null,
-                            val.offer_detail2[2].description
-                        )
-                    )
-                )
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "section",
-        null,
-        response
-    );
-};
-
-exports.default = offer;
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Achievements = function Achievements(props) {
-    var response = props.ach[0] ? props.ach[0] : [];
-    response = response.capital_protection.map(function (val, ind) {
-        return _react2.default.createElement(
-            "div",
-            { className: "achievements", key: ind },
-            _react2.default.createElement(
-                "div",
-                { className: "container-fluid" },
-                _react2.default.createElement(
-                    "h5",
-                    { className: "text-center pt-5 pb-5 ach_Head" },
-                    _react2.default.createElement(
-                        "span",
-                        { className: "font-weight-normal ach_Head" },
-                        val.title_1
-                    ),
-                    " ",
-                    val.title_2
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "achievementInfos" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "achievementInfo" },
-                    _react2.default.createElement(
-                        "p",
-                        null,
-                        val.description1
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        null,
-                        val.description2
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        null,
-                        val.description3
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "achievementInfo" },
-                    _react2.default.createElement("img", { src: val.capital_protection_img, height: "85%", alt: "image" })
-                )
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "section",
-        null,
-        response
-    );
-};
-
-exports.default = Achievements;
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _interestContent = __webpack_require__(36);
-
-var _interestContent2 = _interopRequireDefault(_interestContent);
-
-var _interestForm = __webpack_require__(37);
-
-var _interestForm2 = _interopRequireDefault(_interestForm);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var interest = function interest(props) {
-    return _react2.default.createElement(
-        'section',
-        null,
-        _react2.default.createElement(
-            'div',
-            { className: 'container container2' },
-            _react2.default.createElement(
-                'div',
-                { className: 'row interest' },
-                _react2.default.createElement(_interestContent2.default, { content: props.int }),
-                _react2.default.createElement(_interestForm2.default, { intform: props.int })
-            )
-        )
-    );
-};
-
-exports.default = interest;
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var interestContent = function interestContent(props) {
-    return _react2.default.createElement(
-        "div",
-        { className: "col-md-6 col-xs-12 inter" },
-        _react2.default.createElement(
-            "h2",
-            { id: "head" },
-            props.content[0].Compound_Interest_Calculator[0].title
-        ),
-        _react2.default.createElement(
-            "p",
-            null,
-            props.content[0].Compound_Interest_Calculator[0].description1
-        ),
-        _react2.default.createElement(
-            "p",
-            null,
-            props.content[0].Compound_Interest_Calculator[0].description2
-        )
-    );
-};
-
-exports.default = interestContent;
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var interestForm = function interestForm(props) {
-    return _react2.default.createElement(
-        "div",
-        { className: "col-md-6 inter col-xs-12" },
-        _react2.default.createElement(
-            "div",
-            { className: "form" },
-            _react2.default.createElement(
-                "form",
-                { action: "#" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "form-group d-inline ml-3" },
-                    _react2.default.createElement(
-                        "label",
-                        { className: "mt-2", htmlFor: "no1" },
-                        props.intform[0].Compound_Interest_Calculator[1].form_input_title
-                    ),
-                    _react2.default.createElement("input", { type: "number", id: "no1", className: "form-control ml-3", style: { width: "90%" } })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "form-group d-inline ml-3" },
-                    _react2.default.createElement(
-                        "label",
-                        { htmlFor: "no2", className: "mt-2" },
-                        props.intform[0].Compound_Interest_Calculator[2].form_input_title
-                    ),
-                    _react2.default.createElement("input", { type: "number", id: "no2", className: "form-control ml-3", style: { width: "90%" } })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "form-group d-inline ml-3" },
-                    _react2.default.createElement(
-                        "label",
-                        { htmlFor: "mon", className: "mt-2" },
-                        props.intform[0].Compound_Interest_Calculator[3].form_input_title
-                    ),
-                    _react2.default.createElement(
-                        "select",
-                        { id: "mon", className: "form-control ml-3", style: { width: "90%" } },
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            props.intform[0].Compound_Interest_Calculator[4].form_input_options[0].option_detail
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            props.intform[0].Compound_Interest_Calculator[4].form_input_options[1].option_detail
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            props.intform[0].Compound_Interest_Calculator[4].form_input_options[2].option_detail
-                        ),
-                        _react2.default.createElement(
-                            "option",
-                            null,
-                            props.intform[0].Compound_Interest_Calculator[4].form_input_options[3].option_detail
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "form-group d-inline ml-3" },
-                    _react2.default.createElement(
-                        "label",
-                        { htmlFor: "no3", className: "mt-2" },
-                        props.intform[0].Compound_Interest_Calculator[5].form_input_title
-                    ),
-                    _react2.default.createElement("input", { type: "number", id: "no3", className: "form-control ml-3", style: { width: "90%" } })
-                ),
-                _react2.default.createElement(
-                    "button",
-                    { type: "submit", className: "btn btn-outline-dark ml-3 mt-2" },
-                    props.intform[0].Compound_Interest_Calculator[6].form_btn
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "bottom text-light d-flex flex-column" },
-                _react2.default.createElement(
-                    "h6",
-                    null,
-                    props.intform[0].Compound_Interest_Calculator[6].Interest_Amount
-                ),
-                _react2.default.createElement(
-                    "h1",
-                    null,
-                    props.intform[0].Compound_Interest_Calculator[6].percentage
-                )
-            )
-        )
-    );
-};
-
-exports.default = interestForm;
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var happyClients = function happyClients(props) {
-    var response = props.hc[0] ? props.hc[0] : [];
-    response = response.Happy_Clients.map(function (val, ind) {
-        return _react2.default.createElement(
-            "div",
-            { className: "happyClients", key: ind },
-            _react2.default.createElement(
-                "div",
-                { className: "d-flex flex-column justify-content-around align-items-center", style: { height: "130px" } },
-                _react2.default.createElement(
-                    "h1",
-                    { className: "text-center mt-3 head_hc" },
-                    val.title
-                ),
-                _react2.default.createElement(
-                    "p",
-                    { className: "text-center para_hc" },
-                    val.description
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "clients" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "client" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "client-img" },
-                        _react2.default.createElement("img", { src: val.client_data[0].client_img, alt: "" })
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        { className: "para_c" },
-                        val.client_data[0].client_description
-                    ),
-                    _react2.default.createElement(
-                        "h6",
-                        { className: "client_name" },
-                        val.client_data[0].client_name
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "client client-2" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "client-img" },
-                        _react2.default.createElement("img", { src: val.client_data[1].client_img, alt: "" })
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        { className: "para_c" },
-                        val.client_data[1].client_description
-                    ),
-                    _react2.default.createElement(
-                        "h6",
-                        { className: "client_name" },
-                        val.client_data[1].client_name
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "client" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "client-img" },
-                        _react2.default.createElement("img", { src: val.client_data[2].client_img, alt: "" })
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        { className: "para_c" },
-                        val.client_data[2].client_description
-                    ),
-                    _react2.default.createElement(
-                        "h6",
-                        { className: "client_name" },
-                        val.client_data[2].client_name
-                    )
-                )
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "section",
-        null,
-        response
-    );
-};
-
-exports.default = happyClients;
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var guidance = function guidance(props) {
-    var response = props.guide[0] ? props.guide[0] : [];
-    response = response.contact_detail.map(function (val, ind) {
-        return _react2.default.createElement(
-            "div",
-            { className: "guidance", key: ind },
-            _react2.default.createElement(
-                "div",
-                { className: "form" },
-                _react2.default.createElement(
-                    "form",
-                    { action: "#" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "form-group" },
-                        _react2.default.createElement("input", { type: "text", className: "form-control guide-form", placeholder: val.form_name })
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "form-group" },
-                        _react2.default.createElement("input", { type: "tel", className: "form-control guide-form", placeholder: val.form_phone })
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "form-group" },
-                        _react2.default.createElement("input", { type: "email", className: "form-control guide-form", placeholder: val.form_emailAdree })
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "form-group" },
-                        _react2.default.createElement(
-                            "select",
-                            { className: "form-control guide-form", name: "Investment Option" },
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_question
-                            ),
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_question_options[0].option
-                            ),
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_question_options[1].option
-                            ),
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_question_options[2].option
-                            ),
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_question_options[3].option
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "form-group" },
-                        _react2.default.createElement(
-                            "select",
-                            { name: "Investment Sum", className: "form-control guide-form" },
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_sum
-                            ),
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_sum_options[0].option
-                            ),
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_sum_options[1].option
-                            ),
-                            _react2.default.createElement(
-                                "option",
-                                null,
-                                val.form_sum_options[2].option
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "d-flex justify-content-center align-items-center mt-0", style: { height: "100px" } },
-                        _react2.default.createElement(
-                            "button",
-                            { className: "btn btn-width btn-info " },
-                            val.form_btn
-                        )
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "guide" },
-                _react2.default.createElement(
-                    "h5",
-                    null,
-                    val.reach_out
-                ),
-                _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(
-                        "h5",
-                        null,
-                        val.phone_description
-                    ),
-                    _react2.default.createElement(
-                        "h5",
-                        { className: "phone" },
-                        val.phone_no
-                    ),
-                    _react2.default.createElement(
-                        "h5",
-                        null,
-                        val.GET_QUICKLY
-                    )
-                )
-            )
-        );
-    });
-    return _react2.default.createElement(
-        "section",
-        null,
-        response
-    );
-};
-
-exports.default = guidance;
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var map = function map() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-            "div",
-            { className: "map" },
-            _react2.default.createElement("iframe", { src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8459309398263!2d-0.12924748479932216!3d51.5160425178931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b32c31ab565%3A0xc61be3842a615dfb!2s1+St+Giles+High+St%2C+London+WC2H+8AG%2C+UK!5e0!3m2!1sen!2s!4v1562227833787!5m2!1sen!2s", width: "100%", height: "300" })
-        )
-    );
-};
-
-exports.default = map;
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var footer = function footer(props) {
-    return _react2.default.createElement(
-        "footer",
-        null,
-        _react2.default.createElement(
-            "div",
-            { className: "footer-top" },
-            _react2.default.createElement(
-                "div",
-                { className: "left" },
-                _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(
-                        "h5",
-                        { className: "font-weight-bold text-light" },
-                        props.footer[0].footer_detail[0].contact_title
-                    ),
-                    _react2.default.createElement(
-                        "pre",
-                        { className: "text-light" },
-                        props.footer[0].footer_detail[0].Address_part_1,
-                        " ",
-                        _react2.default.createElement("br", null),
-                        props.footer[0].footer_detail[0].Address_part_2,
-                        " ",
-                        _react2.default.createElement("br", null),
-                        props.footer[0].footer_detail[0].Address_part_3
-                    ),
-                    _react2.default.createElement(
-                        "h6",
-                        { className: "font-weight-bold text-light" },
-                        props.footer[0].footer_detail[0].phone_no
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "right" },
-                _react2.default.createElement(
-                    "div",
-                    null,
-                    _react2.default.createElement(
-                        "h5",
-                        { className: "text-light" },
-                        props.footer[0].footer_detail[1].contac_about_title
-                    ),
-                    _react2.default.createElement(
-                        "p",
-                        { className: "text-light" },
-                        props.footer[0].footer_detail[1].description
-                    )
-                )
-            )
-        ),
-        _react2.default.createElement(
-            "div",
-            { className: "footer-bottom" },
-            _react2.default.createElement(
-                "p",
-                { className: "mt-3 text-light" },
-                props.footer[0].footer_detail[2].copyright
-            )
-        )
-    );
-};
-
-exports.default = footer;
 
 /***/ })
 /******/ ]);
